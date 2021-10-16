@@ -7,4 +7,5 @@ Codes written during Data Mining practicals
 | Sr. No. | Name                                 |
 | :-----: | :----------------------------------- |
 |    1    | Case Study of Data Mining techniques |
-|    2    | [yet to be named](exp2/)             |
+|    2    | [Data Smoothing](exp2/)              |
+|    3    | [to be named](exp3/)                 |
