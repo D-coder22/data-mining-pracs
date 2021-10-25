@@ -1,6 +1,5 @@
 import pandas as pd
 import random
-from pprint import pprint
 
 df = pd.read_csv('exp4/iris.csv')
 
