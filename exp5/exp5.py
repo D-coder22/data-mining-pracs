@@ -15,8 +15,6 @@ word3 = query.split(" ")
 
 allwords = list(set(word1+word2+word3))
 
-print(len(allwords))
-
 word_dict = {"doc_name": ["Doc 1", "Doc 2", "Query Doc"], }
 
 for word in allwords:
@@ -26,8 +24,6 @@ for word in allwords:
     word_dict[word].append(word3.count(word))
 
 word_df = pd.DataFrame(word_dict).set_index("doc_name")
-
-print(word_df)
 
 doc1_row = word_df.loc["Doc 1"].tolist()
 doc2_row = word_df.loc["Doc 2"].tolist()
