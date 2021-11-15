@@ -8,4 +8,6 @@ Codes written during Data Mining practicals
 | :-----: | :----------------------------------- |
 |    1    | Case Study of Data Mining techniques |
 |    2    | [Data Smoothing](exp2/)              |
-|    3    | [to be named](exp3/)                 |
+|    3    | [Data Preprocessing](exp3/)          |
+|    4    | [Similarity & Dissimilarity](exp4/)  |
+|    5    | [Cosine SImilarity](exp5/)           |

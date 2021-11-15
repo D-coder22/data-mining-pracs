@@ -1,7 +1,7 @@
 import pandas as pd
 
-doc1 = "organization accumulate vast amount of data"
-doc2 = "data mining techniques are used to support number of business application"
+doc1 = "organization accumulate vast amounts of data this data will be used for mining"
+doc2 = "data mining techniques are used to support a number of business applications"
 query = "data mining is integral to knowledge discovery"
 
 print("Document 1:\n", doc1)
@@ -14,6 +14,8 @@ word2 = doc2.split(" ")
 word3 = query.split(" ")
 
 allwords = list(set(word1+word2+word3))
+
+print(len(allwords))
 
 word_dict = {"doc_name": ["Doc 1", "Doc 2", "Query Doc"], }
 
