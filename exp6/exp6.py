@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
 from pandas.plotting import parallel_coordinates
+import seaborn as sns
 
 df = pd.read_csv('./iris.csv')
 
@@ -16,9 +18,19 @@ ax1.set_ylabel("Count")
 
 # 2D Histogram
 ax2 = fig.add_subplot(322, projection='3d')
-data1 = df["sepal length"]
-data2 = df["sepal width"]
-ax2.hist2d(data1, data2, bins=[20, 20])
+data1 = df["sepal length"].to_list()
+data2 = df["sepal width"].to_list()
+hist, xedges, yedges = np.histogram2d(data1, data2, bins=20)
+xpos, ypos = np.meshgrid(xedges[:-1] + 0.25, yedges[:-1] + 0.25)
+xpos = xpos.flatten('F')
+ypos = ypos.flatten('F')
+zpos = np.zeros_like(xpos)
+
+dx = 0.5 * np.ones_like(zpos)
+dy = dx.copy()
+dz = hist.flatten()
+
+ax2.bar3d(xpos, ypos, zpos, dx, dy, dz, color='b', zsort='average')
 ax2.set_title("2D Histogram")
 ax2.set_xlabel("Sepal Length")
 ax2.set_ylabel("Sepal width")
@@ -52,6 +64,8 @@ plt.title("Correlation Matrix")
 
 plt.subplots_adjust(hspace=0.5)
 plt.show()
+plt.close(fig)
 
 # Multiple Scatter plot
-fig.add_subplot()
+sns.pairplot(df, kind="scatter", hue="class")
+plt.show()
