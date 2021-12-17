@@ -11,4 +11,5 @@ Codes written during Data Mining practicals
 |    3    | [Data Preprocessing](exp3/)                              |
 |    4    | [Similarity & Dissimilarity](exp4/)                      |
 |    5    | [Cosine SImilarity](exp5/)                               |
-|    5    | [Implementation of Data Visualization techniques](exp6/) |
+|    6    | [Implementation of Data Visualization techniques](exp6/) |
+|    7    | [To be named](exp7/)                                     |
