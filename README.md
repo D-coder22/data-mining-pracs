@@ -12,4 +12,5 @@ Codes written during Data Mining practicals
 |    4    | [Similarity & Dissimilarity](exp4/)                      |
 |    5    | [Cosine SImilarity](exp5/)                               |
 |    6    | [Implementation of Data Visualization techniques](exp6/) |
-|    7    | [To be named](exp7/)                                     |
+|    7    | [Decision Tree Classifier](exp7/)                        |
+|    8    | [K Means Clustering](exp8/)                              |
